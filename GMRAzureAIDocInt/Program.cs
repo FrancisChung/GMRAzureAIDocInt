@@ -7,7 +7,7 @@ string apiKey = SecretStore.Key1;
 var credential = new AzureKeyCredential(apiKey);
 var client = new DocumentAnalysisClient(new Uri(endpoint), credential);
 
-Uri fileUri = new Uri(SecretStore.FileUri2);
+Uri fileUri = new Uri(SecretStore.FileUri5);
 
 AnalyzeDocumentOperation operation = await client.AnalyzeDocumentFromUriAsync(WaitUntil.Completed, "prebuilt-document", fileUri);
 AnalyzeResult result = operation.Value;
