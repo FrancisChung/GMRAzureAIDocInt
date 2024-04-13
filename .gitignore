@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 
 Secrets/
+idea/
+/.idea
